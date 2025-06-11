@@ -1,0 +1,267 @@
+.card{
+
+    width: 90%;
+    max-width: 50rem;
+    box-sizing: border-box;
+    margin-bottom: 5vw;
+    padding: 2.2rem;
+    background-color: var(--branco);
+    border-radius: 1rem;
+    box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.25);
+}
+
+.card__conteúdo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card__texto{
+    width: 55%;
+}
+
+.card__destaque{
+    color: var(--laranja);
+    font-size:var(--fonte-16);
+    font-weight: var(--bold);
+    line-height: 2.6rem;
+
+}
+
+
+.card__titulo{
+    color: var(--azul-escuro);
+    font-size: var(--fonte-18);
+    font-weight: var(--bold);
+    margin: 1rem 0;
+    line-height: 2.8rem;
+}
+
+.card__descrição{
+    color: var(--preto);
+    font-size: var(--fonte-14);
+    font-weight: var(--regular);
+    line-height: 2.2rem;
+}
+
+.card__imagem{
+    width: 40%;
+}
+
+
+.card__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.2rem;
+}
+
+.card__icones{
+    display: flex;
+    gap: 3rem;
+}
+
+.card__icones img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.card__botão{
+    background-color: var(--laranja);
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.6rem 0;
+    color: var(--branco);
+    font-size: var(--fonte-16);
+    font-weight: var(--bold);
+    transition: all .2s ease;
+}
+
+.card__botão:active{
+        transform: scale(0.9);
+    }
+
+.card__texto__estrelas{
+    margin-bottom: .8rem;
+}
+
+@media screen and (max-width: 450px){
+
+    .card{
+        width: 90vw;
+        margin-top: 0;
+        box-sizing: border-box;
+        padding: 5vw;
+    }
+
+    .card__destaque{
+        font-size: var(--fonte-14);
+        margin-bottom: 0rem;
+        line-height: 2.4rem;
+    }
+
+    .card__texto{
+        width: 60%;
+    }
+
+    .card__descrição{
+        font-size: 1.2rem;
+    }
+
+    .card__botão{
+        width: 35%;
+        font-size: var(--fonte-14);
+    }
+
+    .card__titulo{
+        font-size: var(--fonte-16);
+        line-height: 2.4rem;
+        margin: 1rem 0;
+    }
+
+    .card__links{
+        margin-top: 0;
+    }
+
+    .card__icones{
+        gap: 3rem;
+    }
+
+    .card__icones img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .card__imagem{
+        width: 35%;
+    }
+
+    
+    
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .card{
+        width: 60vw;
+        max-width: 72rem;
+        box-sizing: border-box;
+        margin: 0 auto 5vw auto;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+        }
+
+    .card__texto{
+        width: 50%;
+        }
+
+    .card__destaque{
+        font-size:var(--fonte-24);
+        line-height: 4rem;
+        }
+
+    .card__titulo{
+        font-size: var(--fonte-26);
+        margin: 3rem 0;
+        line-height: 2.8rem;
+        }   
+
+    .card__imagem{
+        width: 40%;
+        }
+
+
+    .card__descrição{
+        font-size: var(--fonte-18);
+        font-weight: var(--regular);
+        line-height: 2.8rem;
+        }
+
+    .card__botão{
+        width: 40%;
+        font-size: var(--fonte-18);
+        padding: 2.5rem 0;
+        text-decoration: none;
+        }
+
+    .card__links{  
+        margin-top: 4rem;
+        }
+
+    .card__icones img{
+        height: 4rem;
+        width: 4rem;
+        }
+    
+    .card__icones{
+        gap: 4rem;
+    }
+
+    .card__texto__estrelas{
+        width: 40%;
+    }
+
+}
+
+
+@media screen and (min-width: 1728px){
+
+    .card{
+        width: 67.8rem;
+        margin: 0 3rem 0 3rem;
+        height: fit-content;
+    }
+
+    .card__texto{
+        width: 70%;
+    }
+
+    .card__destaque{
+    line-height: 4rem;
+    font-size:var(--fonte-26);
+    }
+
+    .card__titulo{
+        margin: 1.6rem 0;
+        font-size: var(--fonte-26);
+    }
+
+    .card__descrição{
+        font-size: var(--fonte-18);
+    }
+
+    .card__imagem{
+        width: 25%;
+    }
+
+    .card__links{
+        margin-top: .8rem;
+    }
+
+    .card__icones{
+        gap: 4rem;
+    }
+
+    .card__icones img{
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+
+    .card__botão{
+        width: 25%;
+        padding: 2rem 0;
+    }
+
+    .card__texto__estrelas{
+        width: 30%;
+    }
+
+}
+
+@media (hover: hover) and (pointer: fine){
+    .card__botão:hover{
+        background-color: var(--laranja-escuro);
+    }
+}
+

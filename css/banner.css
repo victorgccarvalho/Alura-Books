@@ -1,0 +1,98 @@
+.banner{
+    background-image: var(--azul-degrade);
+    color: var(--branco);
+    padding: 11.6rem 0 3.6rem 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.banner__titulo{
+    font-size: var(--fonte-18);
+    font-weight: var(--bold);
+    text-align: center;
+}
+
+.banner__descrição{
+    font-size: var(--fonte-16);
+    font-weight: var(--regular);
+    text-align: center;
+    margin: 2rem 0;
+    line-height: 2.4rem;
+    width: 80vw;
+}
+
+.banner__pesquisa{
+    background-color: transparent;
+    border: .1rem solid var(--branco);
+    height: 4.4rem;
+    border-radius: 2.5rem;
+    width: 40rem;
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fonte-14);
+    font-weight: var(--light);
+    color: var(--branco);
+    text-align: center;
+
+}
+
+.banner__pesquisa::placeholder{
+    background-image: url("../imagens/Lupa.svg");
+    background-repeat: no-repeat;
+    color: var(--branco);
+    font-family: "Poppins", sans-serif;
+    font-size: var(--fonte-14);
+    font-weight: var(--light);
+    background-position: 6rem .3rem;
+    padding: 0;
+}
+
+.banner__pesquisa:focus::placeholder{
+    color: transparent;
+    background-image: none;
+}
+
+@media screen and (min-width: 1024px){
+
+    .banner{
+    padding: 16.2rem 0 8.4rem 0px;
+
+}
+
+    .banner__titulo{
+        font-size: var(--fonte-36);
+    }
+
+    .banner__descrição{
+        font-weight: var(--medium);
+        margin: 2.4rem 0;
+        font-size: var(--fonte-18);
+    }
+
+    .banner__pesquisa{
+        width: 60rem;
+        height: 5.6rem;
+        border-radius: 2.8rem;
+    }
+
+    .banner__pesquisa::placeholder{
+        font-size: var(--fonte-16);
+        font-weight: var(--regular);        
+        background-position: 14rem .4rem;
+        padding: 0;
+        background-size: 1.8rem auto;
+}
+}
+
+@media screen and (max-width: 428px){
+
+    .banner__pesquisa{
+        width: 30rem;
+    }
+
+    .banner__pesquisa::placeholder{
+    background-position: 1rem .3rem;
+    padding: 0;
+}
+}
